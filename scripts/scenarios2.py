@@ -18,6 +18,7 @@ mC = res["model_C_ECM"]
 fv = res["fair_value_now"]
 
 IMOEX_NOW = fv["imoex_actual"]
+DATE_NOW = fv.get("date", "2026-08-10")
 BRENT_NOW = fv["inputs"]["brent"]
 USDRUB_NOW = fv["inputs"]["usdrub"]
 BRENT_RUB_MA3M_NOW = fv["inputs"]["brent_rub_ma3m"]
@@ -135,7 +136,7 @@ print(f"\n  Carry в ОФЗ 5Y за 6М: +{ofz_carry_6m:.2f}%")
 with open(f"{WORKDIR}/scenario_results.json", "w", encoding="utf-8") as f:
     json.dump({
         "starting": {
-            "date": "2026-08-10", "imoex": IMOEX_NOW, "brent": BRENT_NOW,
+            "date": DATE_NOW, "imoex": IMOEX_NOW, "brent": BRENT_NOW,
             "usdrub": USDRUB_NOW, "ofz5y": OFZ_NOW,
             "fair_A": fv["fair_value_model_A"], "fair_B": fv["fair_value_model_B"],
             "dev_A_pct": dev_A_now*100, "dev_B_pct": dev_B_now*100,
