@@ -20,8 +20,8 @@ SYNTH_LAST_PCT = _last_synth["p_synthetic_raw"] * 100
 SYNTH_LAST_DATE = _last_synth["date"].strftime("%d.%m.%Y")
 SYNTH_LAST_SOURCE = _last_synth["source"]
 
-_fv_last = fv_ext.dropna(subset=["fair_value_ext"]).iloc[-1]
-FV_EXT_LAST = _fv_last["fair_value_ext"]
+_fv_last = fv_ext.dropna(subset=["fair_ext"]).iloc[-1]
+FV_EXT_LAST = _fv_last["fair_ext"]
 IMOEX_LAST_EXT = _fv_last["imoex"]
 DEV_EXT_PCT = (IMOEX_LAST_EXT / FV_EXT_LAST - 1) * 100
 
