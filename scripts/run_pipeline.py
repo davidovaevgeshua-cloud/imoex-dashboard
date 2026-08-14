@@ -38,6 +38,7 @@ steps = [
     ("Rebuild with CNY/RUB",  "rebuild_with_cnyrub.py"),
     ("Refresh factors",       "refresh_factors.py"),
     ("Fetch Polymarket",      "fetch_polymarket2.py"),
+    ("Fetch Kalshi",          "fetch_kalshi.py"),
     ("Model IMOEX",           "model_imoex.py"),
     ("Backtest strategies",   "backtest.py"),
     ("Scenarios",             "scenarios2.py"),

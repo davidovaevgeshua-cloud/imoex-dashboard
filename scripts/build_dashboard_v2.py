@@ -11,7 +11,12 @@ from plotly.subplots import make_subplots
 import plotly.io as pio
 
 import os as _os
+from datetime import datetime, timezone, timedelta
 WORKDIR = _os.environ.get("WORKDIR", "/home/user/workspace")
+
+# Время сборки в MSK (UTC+3)
+_msk = timezone(timedelta(hours=3))
+last_update_str = datetime.now(_msk).strftime("%d.%m.%Y %H:%M MSK")
 
 df = pd.read_csv(f"{WORKDIR}/imoex_model_output.csv", parse_dates=["date"])
 wf = pd.read_csv(f"{WORKDIR}/walkforward.csv", parse_dates=["date"])
@@ -553,10 +558,9 @@ td.ok {{ color: #2ca02c; font-weight: 600; }}
 
 <h1>Модель IMOEX: анализ факторов, бэктест стратегий и сценарии</h1>
 
-<div class="summary">
-<p><b>Данные:</b> 3 147 дневных наблюдений с 03.02.2014 по 10.08.2026 с MOEX ISS.
-<b>Спецификация:</b> ln(IMOEX) = c + β₁·ln(Brent×USD/RUB, MA3M) + β₂·ОФЗ5Y + ε.
-HAC-стандартные ошибки с 20 лагами.</p>
+<div class="summary update-info">
+<p><b>Последнее обновление:</b> {last_update_str}<br>
+<b>Данные на:</b> {scen['starting']['date']} (IMOEX = {scen['starting']['imoex']:,.2f})</p>
 </div>
 
 {sig_html}

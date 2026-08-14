@@ -14,6 +14,17 @@ synth = pd.read_csv(f"{WORKDIR}/synthetic_index.csv", parse_dates=["date"])
 merged = pd.read_csv(f"{WORKDIR}/synthetic_index_merged.csv", parse_dates=["date"])
 fv_ext = pd.read_csv(f"{WORKDIR}/fair_value_extended.csv", parse_dates=["date"])
 
+# Живые значения для карточек и интерпретации
+_last_synth = synth.dropna(subset=["p_synthetic_raw"]).iloc[-1]
+SYNTH_LAST_PCT = _last_synth["p_synthetic_raw"] * 100
+SYNTH_LAST_DATE = _last_synth["date"].strftime("%d.%m.%Y")
+SYNTH_LAST_SOURCE = _last_synth["source"]
+
+_fv_last = fv_ext.dropna(subset=["fair_value_ext"]).iloc[-1]
+FV_EXT_LAST = _fv_last["fair_value_ext"]
+IMOEX_LAST_EXT = _fv_last["imoex"]
+DEV_EXT_PCT = (IMOEX_LAST_EXT / FV_EXT_LAST - 1) * 100
+
 # === График 1: синтетический индекс vs IMOEX ===
 fig1 = make_subplots(specs=[[{"secondary_y": True}]])
 poly_part = synth[synth["source"]=="polymarket"]
@@ -108,9 +119,9 @@ html_block = f"""
       <div class="metric-sub">Zelensky-Putin meet by 2029, 94 дня</div>
     </div>
     <div class="metric-card">
-      <div class="metric-label">Значение сегодня</div>
-      <div class="metric-value">33.5%</div>
-      <div class="metric-sub">Kalshi last, dev к базовой модели −16.9%</div>
+      <div class="metric-label">Значение на {SYNTH_LAST_DATE}</div>
+      <div class="metric-value">{SYNTH_LAST_PCT:.1f}%</div>
+      <div class="metric-sub">{SYNTH_LAST_SOURCE} last, отклонение к расширенной модели {DEV_EXT_PCT:+.1f}%</div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Медианный сдвиг</div>
@@ -156,7 +167,7 @@ html_block = f"""
 
   <h3>Интерпретация текущего сигнала</h3>
   <div class="callout">
-    <p>Расширенная модель (oil + ofz + z-нормированный геополитический индекс) даёт fair value <b>2,764</b> при факте <b>2,296</b> — отклонение <b>−16.9%</b>. Это больше, чем в базовой модели (−6%): рынок закладывает пониженную вероятность реальной деэскалации (33.5% на Kalshi против пиков 60%+ в марте 2026). Если геополитический трек к встрече лидеров развернётся в позитив, синтетический индекс объясняет <b>около 10 п.п. дополнительной доходности</b>.</p>
+    <p>Расширенная модель (oil + ofz + z-нормированный геополитический индекс) на {SYNTH_LAST_DATE} даёт fair value <b>{FV_EXT_LAST:,.0f}</b> при факте <b>{IMOEX_LAST_EXT:,.0f}</b> — отклонение <b>{DEV_EXT_PCT:+.1f}%</b>. Синтетический индекс ({SYNTH_LAST_PCT:.1f}%) отражает вероятность деэскалации по Kalshi/Polymarket. Если геополитический трек развернётся в позитив, синтетический индекс объясняет <b>около 10 п.п. дополнительной доходности</b>.</p>
     <p>Однако важное замечание: Kalshi имеет всего 202 дня истории в модели, а его коэффициент отдельно (без Polymarket) был не значим. Расширенная спецификация работает благодаря длинной истории Polymarket 2023–2026. Прогноз на Kalshi-периоде — экстраполяция.</p>
   </div>
 </div>
