@@ -107,7 +107,8 @@ print("USD/RUB фиксирован на 82.75")
 print("="*100)
 brent_grid = [55, 60, 65, 70, 75, 80, 85, 90]
 ofz_grid = [10, 12, 14, 15.5, 17, 19]
-print(f"\n{'Brent \\ ОФЗ':>12} " + "".join(f"{o:>8.1f}%" for o in ofz_grid))
+_header = 'Brent \\ ОФЗ'
+print(f"\n{_header:>12} " + "".join(f"{o:>8.1f}%" for o in ofz_grid))
 for brent in brent_grid:
     row = f"${brent:>10}/bbl "
     for ofz in ofz_grid:

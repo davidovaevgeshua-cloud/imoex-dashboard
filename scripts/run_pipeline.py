@@ -36,6 +36,7 @@ steps = [
     ("Fetch OFZ 5Y",          "fetch_ofz5y.py"),
     ("Fetch FX alternatives", "fetch_fx_alternatives.py"),
     ("Rebuild with CNY/RUB",  "rebuild_with_cnyrub.py"),
+    ("Refresh factors",       "refresh_factors.py"),
     ("Fetch Polymarket",      "fetch_polymarket2.py"),
     ("Model IMOEX",           "model_imoex.py"),
     ("Backtest strategies",   "backtest.py"),
