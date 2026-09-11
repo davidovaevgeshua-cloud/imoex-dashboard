@@ -1,21 +1,21 @@
 {
   "starting": {
-    "date": "2026-09-09",
-    "imoex": 2258.95,
-    "brent": 83.75,
-    "usdrub": 85.64,
-    "ofz5y": 15.60553465048371,
-    "fair_A": 2452.600754779041,
-    "fair_B": 2774.0565946140064,
-    "dev_A_pct": -7.895730864540463,
-    "dev_B_pct": -18.568712535069267
+    "date": "2026-09-11",
+    "imoex": 2296.93,
+    "brent": 99.13,
+    "usdrub": 84.8,
+    "ofz5y": 15.598923388298449,
+    "fair_A": 2471.860816409356,
+    "fair_B": 2787.028556553916,
+    "dev_A_pct": -7.076887794332299,
+    "dev_B_pct": -17.58498510542388
   },
   "reversion": {
-    "gamma": 0.0028116053875469507,
-    "half_life_days": 246.53074845780452,
-    "reversion_3m": 16.23300742246675,
-    "reversion_6m": 29.830909545154892,
-    "reversion_12m": 50.76298744739765
+    "gamma": 0.002827546289149155,
+    "half_life_days": 245.1408782306875,
+    "reversion_3m": 16.317090441417157,
+    "reversion_6m": 29.971706478100447,
+    "reversion_12m": 50.960381064106805
   },
   "scenarios_6m": [
     {
@@ -23,43 +23,43 @@
       "brent": 55,
       "usdrub": 100,
       "ofz5y": 17.0,
-      "return_6m_A_ecm": -7.39,
-      "return_6m_A_full": -1.95,
-      "return_6m_B_ecm": 5.62,
-      "return_6m_B_full": 21.44
+      "return_6m_A_ecm": -7.99,
+      "return_6m_A_full": -3.19,
+      "return_6m_B_ecm": 4.95,
+      "return_6m_B_full": 19.69
     },
     {
       "name": "Базовый",
       "brent": 68,
       "usdrub": 92,
       "ofz5y": 14.0,
-      "return_6m_A_ecm": 7.5,
-      "return_6m_A_full": 13.8,
-      "return_6m_B_ecm": 3.04,
-      "return_6m_B_full": 18.48
+      "return_6m_A_ecm": 6.78,
+      "return_6m_A_full": 12.35,
+      "return_6m_B_ecm": 2.41,
+      "return_6m_B_full": 16.79
     },
     {
       "name": "Оптимистичный",
       "brent": 80,
       "usdrub": 85,
       "ofz5y": 12.0,
-      "return_6m_A_ecm": 18.81,
-      "return_6m_A_full": 25.77,
-      "return_6m_B_ecm": 1.4,
-      "return_6m_B_full": 16.6
+      "return_6m_A_ecm": 18.0,
+      "return_6m_A_full": 24.15,
+      "return_6m_B_ecm": 0.79,
+      "return_6m_B_full": 14.95
     },
     {
       "name": "Статус-кво",
-      "brent": 83.75,
-      "usdrub": 85.64,
-      "ofz5y": 15.60553465048371,
-      "return_6m_A_ecm": 5.76,
-      "return_6m_A_full": 11.96,
-      "return_6m_B_ecm": 9.1,
-      "return_6m_B_full": 25.44
+      "brent": 99.13,
+      "usdrub": 84.8,
+      "ofz5y": 15.598923388298449,
+      "return_6m_A_ecm": 10.81,
+      "return_6m_A_full": 16.59,
+      "return_6m_B_ecm": 12.47,
+      "return_6m_B_full": 28.26
     }
   ],
-  "ofz_carry_6m_pct": 7.520014253386198,
+  "ofz_carry_6m_pct": 7.51693977615735,
   "weights": {
     "Пессимистичный": 0.2,
     "Базовый": 0.5,
