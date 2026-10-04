@@ -1,21 +1,21 @@
 {
   "starting": {
-    "date": "2026-10-03",
-    "imoex": 2283.54,
+    "date": "2026-10-04",
+    "imoex": 2283.89,
     "brent": 93.29,
     "usdrub": 83.4839,
     "ofz5y": 16.428793579098656,
-    "fair_A": 2551.43709469985,
-    "fair_B": 2930.182320936611,
-    "dev_A_pct": -10.49985105477842,
-    "dev_B_pct": -22.068330571659335
+    "fair_A": 2554.549224233096,
+    "fair_B": 2931.324880082605,
+    "dev_A_pct": -10.595185313540046,
+    "dev_B_pct": -22.08676644754437
   },
   "reversion": {
-    "gamma": 0.002843139020081634,
-    "half_life_days": 243.79644317921648,
-    "reversion_3m": 16.399255318623684,
-    "reversion_6m": 30.10915488719329,
-    "reversion_12m": 51.15269769417663
+    "gamma": 0.002842838790967959,
+    "half_life_days": 243.822190256499,
+    "reversion_3m": 16.39767404288812,
+    "reversion_6m": 30.10651094560818,
+    "reversion_12m": 51.1490018780361
   },
   "scenarios_6m": [
     {
@@ -23,40 +23,40 @@
       "brent": 55,
       "usdrub": 100,
       "ofz5y": 17.0,
-      "return_6m_A_ecm": -6.69,
-      "return_6m_A_full": 0.7,
-      "return_6m_B_ecm": 3.5,
-      "return_6m_B_full": 22.37
+      "return_6m_A_ecm": -6.71,
+      "return_6m_A_full": 0.75,
+      "return_6m_B_ecm": 3.47,
+      "return_6m_B_full": 22.36
     },
     {
       "name": "Базовый",
       "brent": 68,
       "usdrub": 92,
       "ofz5y": 14.0,
-      "return_6m_A_ecm": 8.16,
-      "return_6m_A_full": 16.72,
-      "return_6m_B_ecm": 1.22,
-      "return_6m_B_full": 19.68
+      "return_6m_A_ecm": 8.13,
+      "return_6m_A_full": 16.78,
+      "return_6m_B_ecm": 1.21,
+      "return_6m_B_full": 19.69
     },
     {
       "name": "Оптимистичный",
       "brent": 80,
       "usdrub": 85,
       "ofz5y": 12.0,
-      "return_6m_A_ecm": 19.43,
-      "return_6m_A_full": 28.88,
+      "return_6m_A_ecm": 19.4,
+      "return_6m_A_full": 28.95,
       "return_6m_B_ecm": -0.22,
-      "return_6m_B_full": 17.98
+      "return_6m_B_full": 18.0
     },
     {
       "name": "Статус-кво",
       "brent": 93.29,
       "usdrub": 83.4839,
       "ofz5y": 16.428793579098656,
-      "return_6m_A_ecm": 5.57,
-      "return_6m_A_full": 13.93,
-      "return_6m_B_ecm": 9.98,
-      "return_6m_B_full": 30.04
+      "return_6m_A_ecm": 5.53,
+      "return_6m_A_full": 13.97,
+      "return_6m_B_ecm": 9.93,
+      "return_6m_B_full": 30.0
     }
   ],
   "ofz_carry_6m_pct": 7.902174945224649,
