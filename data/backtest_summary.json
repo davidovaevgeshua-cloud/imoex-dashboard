@@ -4,178 +4,178 @@
       "strategy": "S1_long_thr2",
       "name": "S1 long если dev<-2%",
       "n_years": 8.66,
-      "total_return_pct": 89.01,
-      "CAGR_pct": 7.63,
+      "total_return_pct": 89.46,
+      "CAGR_pct": 7.66,
       "vol_ann_pct": 11.39,
-      "sharpe": 0.701,
+      "sharpe": 0.703,
       "max_drawdown_pct": -26.51,
-      "final_equity": 2.698
+      "final_equity": 2.705
     },
     {
       "strategy": "S1_long_thr3",
       "name": "S1 long если dev<-3%",
       "n_years": 8.66,
-      "total_return_pct": 90.28,
-      "CAGR_pct": 7.71,
+      "total_return_pct": 90.74,
+      "CAGR_pct": 7.74,
       "vol_ann_pct": 11.31,
-      "sharpe": 0.712,
+      "sharpe": 0.714,
       "max_drawdown_pct": -26.1,
-      "final_equity": 2.717
+      "final_equity": 2.723
     },
     {
       "strategy": "S1_long_thr5",
       "name": "S1 long если dev<-5%",
       "n_years": 8.66,
-      "total_return_pct": 89.71,
-      "CAGR_pct": 7.68,
+      "total_return_pct": 90.17,
+      "CAGR_pct": 7.7,
       "vol_ann_pct": 11.24,
-      "sharpe": 0.712,
+      "sharpe": 0.715,
       "max_drawdown_pct": -26.1,
-      "final_equity": 2.708
+      "final_equity": 2.715
     },
     {
       "strategy": "S1_long_thr7",
       "name": "S1 long если dev<-7%",
       "n_years": 8.66,
-      "total_return_pct": 117.56,
-      "CAGR_pct": 9.39,
+      "total_return_pct": 118.09,
+      "CAGR_pct": 9.42,
       "vol_ann_pct": 10.9,
-      "sharpe": 0.876,
+      "sharpe": 0.878,
       "max_drawdown_pct": -25.07,
-      "final_equity": 3.106
+      "final_equity": 3.113
     },
     {
       "strategy": "S1_long_thr10",
       "name": "S1 long если dev<-10%",
       "n_years": 8.66,
-      "total_return_pct": 134.33,
+      "total_return_pct": 134.47,
       "CAGR_pct": 10.34,
-      "vol_ann_pct": 10.33,
-      "sharpe": 1.001,
+      "vol_ann_pct": 10.32,
+      "sharpe": 1.002,
       "max_drawdown_pct": -24.22,
-      "final_equity": 3.345
+      "final_equity": 3.347
     },
     {
       "strategy": "S2_ls_thr3",
       "name": "S2 long/short |dev|>3%",
       "n_years": 8.66,
-      "total_return_pct": -31.0,
-      "CAGR_pct": -4.2,
-      "vol_ann_pct": 24.94,
-      "sharpe": -0.049,
+      "total_return_pct": -30.83,
+      "CAGR_pct": -4.17,
+      "vol_ann_pct": 24.93,
+      "sharpe": -0.048,
       "max_drawdown_pct": -49.53,
-      "final_equity": 0.985
+      "final_equity": 0.987
     },
     {
       "strategy": "S2_ls_thr5",
       "name": "S2 long/short |dev|>5%",
       "n_years": 8.66,
-      "total_return_pct": -26.21,
-      "CAGR_pct": -3.45,
+      "total_return_pct": -26.03,
+      "CAGR_pct": -3.42,
       "vol_ann_pct": 24.65,
-      "sharpe": -0.022,
+      "sharpe": -0.021,
       "max_drawdown_pct": -49.14,
-      "final_equity": 1.053
+      "final_equity": 1.056
     },
     {
       "strategy": "S2_ls_thr7",
       "name": "S2 long/short |dev|>7%",
       "n_years": 8.66,
-      "total_return_pct": -4.85,
-      "CAGR_pct": -0.57,
+      "total_return_pct": -4.63,
+      "CAGR_pct": -0.55,
       "vol_ann_pct": 24.12,
-      "sharpe": 0.094,
+      "sharpe": 0.095,
       "max_drawdown_pct": -43.62,
-      "final_equity": 1.358
+      "final_equity": 1.362
     },
     {
       "strategy": "S2_ls_thr10",
       "name": "S2 long/short |dev|>10%",
       "n_years": 8.66,
-      "total_return_pct": 1.16,
-      "CAGR_pct": 0.13,
-      "vol_ann_pct": 23.59,
-      "sharpe": 0.12,
+      "total_return_pct": 1.22,
+      "CAGR_pct": 0.14,
+      "vol_ann_pct": 23.58,
+      "sharpe": 0.121,
       "max_drawdown_pct": -45.79,
-      "final_equity": 1.444
+      "final_equity": 1.445
     },
     {
       "strategy": "S3_prop_sc5",
       "name": "S3 пропорц., scale=5%",
       "n_years": 8.66,
-      "total_return_pct": -32.22,
-      "CAGR_pct": -4.39,
+      "total_return_pct": -32.06,
+      "CAGR_pct": -4.37,
       "vol_ann_pct": 24.88,
-      "sharpe": -0.058,
+      "sharpe": -0.057,
       "max_drawdown_pct": -50.52,
-      "final_equity": 0.968
+      "final_equity": 0.97
     },
     {
       "strategy": "S3_prop_sc10",
       "name": "S3 пропорц., scale=10%",
       "n_years": 8.66,
-      "total_return_pct": -20.77,
-      "CAGR_pct": -2.65,
-      "vol_ann_pct": 24.29,
-      "sharpe": 0.008,
+      "total_return_pct": -20.6,
+      "CAGR_pct": -2.63,
+      "vol_ann_pct": 24.28,
+      "sharpe": 0.009,
       "max_drawdown_pct": -46.85,
-      "final_equity": 1.131
+      "final_equity": 1.134
     },
     {
       "strategy": "S3_prop_sc15",
       "name": "S3 пропорц., scale=15%",
       "n_years": 8.66,
-      "total_return_pct": -12.56,
-      "CAGR_pct": -1.54,
-      "vol_ann_pct": 23.56,
-      "sharpe": 0.049,
+      "total_return_pct": -12.42,
+      "CAGR_pct": -1.52,
+      "vol_ann_pct": 23.55,
+      "sharpe": 0.05,
       "max_drawdown_pct": -45.66,
-      "final_equity": 1.248
+      "final_equity": 1.25
     },
     {
       "strategy": "S4_long_thr3_rate_filter",
       "name": "S4 long dev<-3% + rate stable",
       "n_years": 8.66,
-      "total_return_pct": 126.09,
-      "CAGR_pct": 9.88,
-      "vol_ann_pct": 9.72,
-      "sharpe": 1.015,
+      "total_return_pct": 126.64,
+      "CAGR_pct": 9.91,
+      "vol_ann_pct": 9.71,
+      "sharpe": 1.018,
       "max_drawdown_pct": -17.28,
-      "final_equity": 3.228
+      "final_equity": 3.236
     },
     {
       "strategy": "BH_buy_hold",
       "name": "Buy & Hold IMOEX",
       "n_years": 8.66,
-      "total_return_pct": 5.73,
-      "CAGR_pct": 0.65,
+      "total_return_pct": 5.98,
+      "CAGR_pct": 0.67,
       "vol_ann_pct": 25.41,
-      "sharpe": 0.163,
+      "sharpe": 0.164,
       "max_drawdown_pct": -55.29,
-      "final_equity": 1.904
+      "final_equity": 1.908
     },
     {
       "strategy": "RF_ofz",
       "name": "Только ОФЗ 5Y (кэш)",
       "n_years": 8.66,
-      "total_return_pct": 135.18,
-      "CAGR_pct": 10.38,
+      "total_return_pct": 135.32,
+      "CAGR_pct": 10.39,
       "vol_ann_pct": 0.22,
-      "sharpe": 44.915,
+      "sharpe": 44.914,
       "max_drawdown_pct": 0.0,
-      "final_equity": 3.357
+      "final_equity": 3.359
     }
   ],
   "burnin_days": 1000,
   "tx_cost_pct_roundtrip": 0.1,
   "dev_stats_active": {
-    "n_days": 2191,
-    "mean_pct": 17.949686778915865,
-    "median_pct": 22.285692298285873,
-    "std_pct": 19.13956092625191,
+    "n_days": 2192,
+    "mean_pct": 17.937587345596075,
+    "median_pct": 22.28408918239706,
+    "std_pct": 19.14357591394643,
     "min_pct": -33.96154923136822,
-    "max_pct": 56.21507437646933,
-    "pct_days_abs_gt_5": 95.84664536741214,
-    "pct_days_abs_gt_10": 86.99224098585121
+    "max_pct": 56.21507437646891,
+    "pct_days_abs_gt_5": 95.84854014598541,
+    "pct_days_abs_gt_10": 86.95255474452554
   }
 }
